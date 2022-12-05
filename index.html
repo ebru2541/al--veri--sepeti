@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alışveriş Sepeti</title>
+    <style>
+        body {
+
+            margin: 5rem 10rem;
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            font-weight: 500;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: inline-block;
+        }
+
+        tr:nth-child(even) {
+            background-color: #E8E8E8;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #CDCDCD;
+        }
+
+        td {
+            padding: 0.5rem;
+        }
+
+        #son {
+            background-color: #3F3F3F;
+            color: azure;
+            text-align: right;
+        }
+
+        #title {
+            background-color: #3F3F3F;
+            color: azure;
+            font-weight: 600;
+        }
+
+        .kod {
+            padding-right: 1.8rem;
+        }
+
+        .col {
+            padding-right: 5rem;
+        }
+
+        .miktar {
+            text-align: center
+        }
+
+        .fiyat {
+            text-align: right;
+            width: 6rem;
+        }
+
+        #icon {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 5rem;
+        }
+
+        .footer {
+            display: flex;
+            margin-top: 1rem;
+            justify-content: flex-end;
+        }
+
+        .icon {
+            background-color: rgb(15, 134, 95);
+            padding: 0.8rem;
+        }
+
+        .icon1 {
+            margin-right: 1rem;
+        }
+
+        span {
+            color: white;
+        }
+
+        caption {
+            background-color: rgb(15, 134, 95);
+            padding: 1rem;
+            margin-bottom: 0.8rem;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table witdh="80%">
+        <caption>ALIŞVERİŞ SEPETİ</caption>
+        <thead>
+            <tr id="title">
+                <td class="kod">Ürün Kodu</td>
+                <td class="col">Ürün Adı</td>
+                <td class="miktar">Miktar</td>
+                <td class="fiyat">Birim Fiyatı</td>
+                <td class="fiyat">Ara Toplam</td>
+                <td id="icon"></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>154654</td>
+                <td>Notebook</td>
+                <td class="miktar">1</td>
+                <td class="fiyat">5.400₺</td>
+                <td class="fiyat">5.400₺</td>
+                <td id="icon">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>454666</td>
+                <td>Klavye</td>
+                <td class="miktar">2</td>
+                <td class="fiyat">80₺</td>
+                <td class="fiyat">160₺</td>
+                <td id="icon">
+                    <div><i class="fa-regular fa-pen-to-square"></i></div>
+                    <div><i class="fa-solid fa-trash-can"></i></div>
+                </td>
+            </tr>
+            <tr>
+                <td>544646</td>
+                <td>Monitör</td>
+                <td class="miktar">1</td>
+                <td class="fiyat">700₺</td>
+                <td class="fiyat">700₺</td>
+                <td id="icon">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>453598</td>
+                <td>Mouse</td>
+                <td class="miktar"> 2</td>
+                <td class="fiyat">50₺</td>
+                <td class="fiyat">100₺</td>
+                <td id="icon">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>617840</td>
+                <td>Play Station</td>
+                <td class="miktar">1</td>
+                <td class="fiyat">2.500₺</td>
+                <td class="fiyat">2.500₺</td>
+                <td id="icon">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>454506</td>
+                <td>Usb Bellek</td>
+                <td class="miktar">3</td>
+                <td class="fiyat">120₺</td>
+                <td class="fiyat">360₺</td>
+                <td id="icon">
+
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-solid fa-trash-can"></i>
+                </td>
+            </tr>
+            <tr id="son">
+                <td colspan="4"><b>TOPLAM</b></td>
+                <td class="fiyat">9.220₺</td>
+                <td class="fiyat"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <div class="icon icon1"><i class="fa-solid fa-cart-shopping"></i> <span>Alışverişe Devam</span> </div>
+        <div class="icon icon2"><i class="fa-brands fa-cc-visa"></i> <span>Ödemeye Geç</span> </div>
+    </div>
+
+</body>
+
+</html>
